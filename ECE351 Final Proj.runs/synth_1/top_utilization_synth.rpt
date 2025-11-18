@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Fri Nov 14 09:11:16 2025
+| Date         : Tue Nov 18 10:50:40 2025
 | Host         : poppy-36gm0.device.utk.edu running 64-bit Bazzite
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -94,7 +94,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   19 |     0 |          0 |       106 | 17.92 |
+| Bonded IOB                  |   26 |     0 |          0 |       106 | 24.53 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -158,9 +158,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | IBUF     |   18 |                  IO |
 | LUT6     |   16 |                 LUT |
 | CARRY4   |    8 |          CarryLogic |
+| OBUFT    |    6 |                  IO |
 | LUT2     |    3 |                 LUT |
+| OBUF     |    2 |                  IO |
 | LUT5     |    2 |                 LUT |
-| OBUF     |    1 |                  IO |
 | LUT1     |    1 |                 LUT |
 | DSP48E1  |    1 |    Block Arithmetic |
 | BUFG     |    1 |               Clock |
