@@ -104,7 +104,7 @@ module sw_to_angle(
         case (sw)
         // Switch 0
         1:
-        angle = 9'd0;
+            angle = 9'd0;
         // Switch 1
         2:
         angle = 9'd24;

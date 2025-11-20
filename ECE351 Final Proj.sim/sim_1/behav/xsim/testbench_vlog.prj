@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../ECE351 Final Proj.srcs/sources_1/new/dependencies.v" \
+"../../../../ECE351 Final Proj.srcs/sources_1/new/step1.v" \
+"../../../../ECE351 Final Proj.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
