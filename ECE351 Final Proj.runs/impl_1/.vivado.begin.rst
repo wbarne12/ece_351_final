@@ -18,3 +18,13 @@
     <Process Command="vivado" Owner="david" Host="bazzite" Pid="96526" HostCore="6" HostMemory="15711684">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="david" Host="bazzite" Pid="99897" HostCore="6" HostMemory="15711684">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="david" Host="bazzite" Pid="100629" HostCore="6" HostMemory="15711684">
+    </Process>
+</ProcessHandle>

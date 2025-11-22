@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date             : Sat Nov 22 17:26:15 2025
+| Date             : Sat Nov 22 17:41:08 2025
 | Host             : bazzite running 64-bit Bazzite
 | Command          : report_power -file step1_power_routed.rpt -pb step1_power_summary_routed.pb -rpx step1_power_routed.rpx
 | Design           : step1
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      183 |       --- |             --- |
+| Slice Logic    |    <0.001 |      180 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       57 |     20800 |            0.27 |
 |   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
-|   Register     |    <0.001 |       30 |     41600 |            0.07 |
+|   Register     |    <0.001 |       27 |     41600 |            0.06 |
 |   Others       |     0.000 |       26 |       --- |             --- |
-| Signals        |    <0.001 |      161 |       --- |             --- |
+| Signals        |    <0.001 |      158 |       --- |             --- |
 | DSPs           |     0.000 |        5 |        90 |            5.56 |
 | I/O            |     0.005 |       15 |       106 |           14.15 |
 | Static Power   |     0.072 |          |           |                 |
