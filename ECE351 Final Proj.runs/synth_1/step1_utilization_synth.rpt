@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Nov 19 20:37:02 2025
-| Host         : DESKTOP-7D2UER5 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Sat Nov 22 17:25:16 2025
+| Host         : bazzite running 64-bit Bazzite
 | Command      : report_utilization -file step1_utilization_synth.rpt -pb step1_utilization_synth.pb
 | Design       : step1
 | Device       : xc7a35tcpg236-1
@@ -156,11 +156,12 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LUT4     |  105 |                 LUT |
 | FDRE     |   20 |        Flop & Latch |
 | CARRY4   |   20 |          CarryLogic |
-| OBUF     |    8 |                  IO |
 | IBUF     |    7 |                  IO |
+| OBUF     |    5 |                  IO |
 | LDPE     |    5 |        Flop & Latch |
 | LDCE     |    5 |        Flop & Latch |
 | DSP48E1  |    5 |    Block Arithmetic |
+| OBUFT    |    3 |                  IO |
 | LUT6     |    1 |                 LUT |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

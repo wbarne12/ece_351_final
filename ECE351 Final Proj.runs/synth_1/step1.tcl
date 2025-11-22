@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/step1.tcl"
+  variable script "/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/synth_1/step1.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,25 +56,27 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param ced.repoPaths /var/home/david/vivado/ced_store/Vivado_example_project
+set_param chipscope.maxJobs 1
 set_param general.usePosixSpawnForFork 1
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.xpr} [current_project]
+set_property webtalk.parent_dir {/home/david/vivado/ece_351_final/ECE351 Final Proj.cache/wt} [current_project]
+set_property parent.project_path {/home/david/vivado/ece_351_final/ECE351 Final Proj.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.cache/ip} [current_project]
+set_property ip_output_repo {/home/david/vivado/ece_351_final/ECE351 Final Proj.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v}
-  {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v}
+  {/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v}
+  {/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -85,12 +87,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}]
+read_xdc {{/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}
+set_property used_in_implementation false [get_files {{/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp}
+read_checkpoint -auto_incremental -incremental {/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

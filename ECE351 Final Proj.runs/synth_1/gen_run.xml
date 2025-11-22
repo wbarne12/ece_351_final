@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763602489" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
-  <File Type="REPORTS-TCL" Name="step1_reports.tcl"/>
-  <File Type="RDS-UTIL" Name="step1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="step1_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="step1.tcl"/>
-  <File Type="RDS-RDS" Name="step1.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763850280" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="step1_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="step1.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="step1_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="step1_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="step1_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="step1.vds"/>
+  <File Type="REPORTS-TCL" Name="step1_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="step1_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="step1.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/dependencies.v">

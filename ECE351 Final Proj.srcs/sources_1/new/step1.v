@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 
-
 /*
  * For this module, it will take in 5 switches. 
  * Each switch will correspond to a finger.
@@ -12,8 +11,8 @@ module step1(
     input [15:0] sw,
     input clr,
     input clk,
-    output [3:0] JA,
-    output [3:0] JB
+    output [3:0] JB,
+    output [3:0] JC
     );
     
     wire [8:0] deg0, deg1, deg2, deg3, deg4;
@@ -35,16 +34,18 @@ module step1(
     angle_decoder dc3(.angle(deg3), .value(val3));
     angle_decoder dc4(.angle(deg4), .value(val4));
     
-    comparator comp1(.A(val0), .B(count_net), .PWM(JA[0]));
-    comparator comp2(.A(val1), .B(count_net), .PWM(JA[1]));
-    comparator comp3(.A(val2), .B(count_net), .PWM(JA[2]));
-    comparator comp4(.A(val3), .B(count_net), .PWM(JA[3]));
+    comparator comp1(.A(count_net), .B(val0), .PWM(JB[0]));
+    comparator comp2(.A(count_net), .B(val1), .PWM(JB[1]));
+    comparator comp3(.A(count_net), .B(val2), .PWM(JB[2]));
+    comparator comp4(.A(count_net), .B(val3), .PWM(JB[3]));
+    comparator comp5(.A(count_net), .B(val4), .PWM(JC[0]));
+    
     
     // Don't need the extra comparators here, just doing for simulation
-    comparator comp5(.A(val4), .B(count_net), .PWM(JB[0]));
-    comparator comp6(.A(val4), .B(count_net), .PWM(JB[1]));
-    comparator comp7(.A(val4), .B(count_net), .PWM(JB[2]));
-    comparator comp8(.A(val4), .B(count_net), .PWM(JB[3]));
+//    comparator comp5(.A(val4), .B(count_net), .PWM(JC[0]));
+//    comparator comp6(.A(val4), .B(count_net), .PWM(JC[1]));
+//    comparator comp7(.A(val4), .B(count_net), .PWM(JC[2]));
+//    comparator comp8(.A(val4), .B(count_net), .PWM(JC[3]));
     
     
     counter count(.clk(clk), .clr(clr), .count(count_net));
@@ -58,27 +59,27 @@ module bin_converter(
     always @ (*) begin
         // Covering all cases so no inferred latch
         if (switch[4]) 
-            angle4 = 9'd360;
+            angle4 = 9'd180;
         else if (!switch[4])
             angle4 = 9'd0;
             
         if (switch[3])
-            angle3 = 9'd360;
+            angle3 = 9'd180;
         else if (!switch[3])
             angle3 = 9'd0;
         
         if (switch[2])
-            angle2 = 9'd360;
+            angle2 = 9'd180;
         else if (!switch[2])
             angle2 = 9'd0;
         
         if (switch[1])
-            angle1 = 9'd360;
+            angle1 = 9'd180;
         else if (!switch[1])
             angle1 = 9'd0;
             
         if (switch[0])
-            angle0 = 9'd360;
+            angle0 = 9'd180;
         else if (!switch[0])
             angle0 = 9'd0;
     end
