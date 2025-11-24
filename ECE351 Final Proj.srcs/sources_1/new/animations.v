@@ -59,7 +59,7 @@ module animations(
     );
     
     bin_converter convert(
-        .switch(mem_animation[4:0]), 
+        .switch(sw[15] ? mem_animation[4:0]: sw[4:0]), 
         .angle0(deg0), 
         .angle1(deg1), 
         .angle2(deg2), 
@@ -80,7 +80,7 @@ module animations(
     comparator comp5(.A(count_net), .B(val4), .PWM(JC[0]));
 
     
-    counter count1(.clk(clk), .clr(reset), .count(count_net));
+    counter count1(.clk(clk), .clr(1'b0), .count(count_net));
 endmodule
 
 module bin_converter(
