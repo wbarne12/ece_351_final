@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sun Nov 23 23:01:23 2025
-# Process ID         : 11172
+# Start of session at: Mon Nov 24 10:35:41 2025
+# Process ID         : 12212
 # Current directory  : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1
 # Command line       : vivado.exe -log animations.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source animations.tcl -notrace
 # Log file           : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1/animations.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 8164 MB
 # Swap memory        : 5179 MB
 # Total Virtual      : 13344 MB
-# Available Virtual  : 6675 MB
+# Available Virtual  : 6869 MB
 #-----------------------------------------------------------
 source animations.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Sun Nov 23 23:03:49 2025
+| Date         : Mon Nov 24 10:38:02 2025
 | Host         : DESKTOP-7D2UER5 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file animations_methodology_drc_routed.rpt -pb animations_methodology_drc_routed.pb -rpx animations_methodology_drc_routed.rpx
 | Design       : animations
@@ -66,7 +66,7 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on clr relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on sw relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#2 Warning

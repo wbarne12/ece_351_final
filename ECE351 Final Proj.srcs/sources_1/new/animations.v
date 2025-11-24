@@ -13,12 +13,11 @@
  * fingers move.
  */
 module animations(
-    input clr,
     input clk,
     input sw, 
     output [3:0] JB,
     output [3:0] JC
-    );
+);
     
     wire [8:0] deg0, deg1, deg2, deg3, deg4;
     wire [19:0] val0, val1, val2, val3, val4;
@@ -26,16 +25,26 @@ module animations(
     wire sec_clk;
     wire [7:0] count;
     wire [7:0] mem_animation;
+    reg reset;
+    
+    
+    always @ (posedge clk) begin
+        if (!sw) begin
+            reset = 1'b1;
+        end else if (sw) begin
+            reset = 1'b0;
+        end
+    end
     
     second_clk sec_clk_0(
         .clk(clk), 
-        .clr(clr), 
+        .clr(reset), 
         .sec_clk(sec_clk)
     );
     
     eight_bit_counter eight_count(
         .clk(sec_clk), 
-        .clr(clr), 
+        .clr(reset), 
         .count(count)
     );
     
@@ -72,7 +81,7 @@ module animations(
     comparator comp5(.A(count_net), .B(val4), .PWM(JC[0]));
 
     
-    counter count1(.clk(clk), .clr(clr), .count(count_net));
+    counter count1(.clk(clk), .clr(reset), .count(count_net));
 endmodule
 
 module bin_converter(

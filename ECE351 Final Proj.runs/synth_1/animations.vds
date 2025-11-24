@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sun Nov 23 22:59:30 2025
-# Process ID         : 13588
+# Start of session at: Mon Nov 24 10:33:40 2025
+# Process ID         : 7256
 # Current directory  : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1
 # Command line       : vivado.exe -log animations.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source animations.tcl
 # Log file           : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/animations.vds
@@ -19,10 +19,9 @@
 # Host memory        : 8164 MB
 # Swap memory        : 5179 MB
 # Total Virtual      : 13344 MB
-# Available Virtual  : 6644 MB
+# Available Virtual  : 6885 MB
 #-----------------------------------------------------------
 source animations.tcl -notrace
-create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 492.641 ; gain = 212.234
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -35,20 +34,20 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7936
+INFO: [Synth 8-7075] Helper process launched with PID 8500
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1183.840 ; gain = 494.402
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1186.055 ; gain = 493.508
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'animations' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:15]
-INFO: [Synth 8-6157] synthesizing module 'second_clk' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:115]
-INFO: [Synth 8-6155] done synthesizing module 'second_clk' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:115]
-INFO: [Synth 8-6157] synthesizing module 'eight_bit_counter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'eight_bit_counter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:144]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-13588-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-13588-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (6) of module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:48]
-INFO: [Synth 8-6157] synthesizing module 'bin_converter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:78]
-INFO: [Synth 8-6155] done synthesizing module 'bin_converter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:78]
+INFO: [Synth 8-6157] synthesizing module 'second_clk' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'second_clk' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:125]
+INFO: [Synth 8-6157] synthesizing module 'eight_bit_counter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'eight_bit_counter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:154]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-7256-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-7256-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (6) of module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bin_converter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'bin_converter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:88]
 INFO: [Synth 8-6157] synthesizing module 'angle_decoder' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
 INFO: [Synth 8-6155] done synthesizing module 'angle_decoder' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
 INFO: [Synth 8-6157] synthesizing module 'comparator' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:44]
@@ -59,20 +58,20 @@ INFO: [Synth 8-6155] done synthesizing module 'animations' (0#1) [C:/Users/Stan/
 WARNING: [Synth 8-7129] Port JC[3] in module animations is either unconnected or has no load
 WARNING: [Synth 8-7129] Port JC[2] in module animations is either unconnected or has no load
 WARNING: [Synth 8-7129] Port JC[1] in module animations is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module animations is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1296.164 ; gain = 603.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1296.164 ; gain = 603.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1296.164 ; gain = 603.617
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1294.719 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1296.164 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -119,37 +118,37 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/animations_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1330.941 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1372.344 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1330.941 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'animation_memory' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1336.273 ; gain = 643.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1336.273 ; gain = 643.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1336.273 ; gain = 643.727
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'angle0_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:106]
-WARNING: [Synth 8-327] inferring latch for variable 'angle1_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:101]
-WARNING: [Synth 8-327] inferring latch for variable 'angle2_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:96]
-WARNING: [Synth 8-327] inferring latch for variable 'angle3_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:91]
-WARNING: [Synth 8-327] inferring latch for variable 'angle4_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'angle0_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'angle1_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'angle2_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'angle3_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'angle4_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:96]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1372.848 ; gain = 683.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1336.273 ; gain = 643.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -161,7 +160,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -196,12 +195,12 @@ DSP Report: operator dc4/value1 is absorbed into DSP dc4/value0.
 WARNING: [Synth 8-7129] Port JC[3] in module animations is either unconnected or has no load
 WARNING: [Synth 8-7129] Port JC[2] in module animations is either unconnected or has no load
 WARNING: [Synth 8-7129] Port JC[1] in module animations is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module animations is either unconnected or has no load
 WARNING: [Synth 8-3332] Sequential element (convert/angle0_reg[8]) is unused and will be removed from module animations.
 WARNING: [Synth 8-3332] Sequential element (convert/angle3_reg[8]) is unused and will be removed from module animations.
 WARNING: [Synth 8-3332] Sequential element (convert/angle4_reg[8]) is unused and will be removed from module animations.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1372.848 ; gain = 683.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1362.191 ; gain = 669.645
 ---------------------------------------------------------------------------------
  Sort Area is  dc0/value0_0 : 0 0 : 279 279 : Used 1 time 0
  Sort Area is  dc1/value0_2 : 0 0 : 279 279 : Used 1 time 0
@@ -231,19 +230,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1548.566 ; gain = 859.129
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1542.270 ; gain = 849.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1570.809 ; gain = 881.371
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1564.602 ; gain = 872.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1571.352 ; gain = 881.914
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1565.164 ; gain = 872.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -261,37 +260,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -324,13 +323,13 @@ Report Cell Usage:
 |2     |BUFG        |     1|
 |3     |CARRY4      |    28|
 |4     |DSP48E1     |     5|
-|5     |LUT1        |     3|
+|5     |LUT1        |     4|
 |6     |LUT2        |     1|
 |7     |LUT3        |     1|
 |8     |LUT4        |   111|
 |9     |LUT5        |     5|
 |10    |LUT6        |     4|
-|11    |FDRE        |    59|
+|11    |FDRE        |    60|
 |12    |LDC         |     5|
 |13    |LDP         |     2|
 |14    |IBUF        |     2|
@@ -338,29 +337,30 @@ Report Cell Usage:
 |16    |OBUFT       |     3|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 1793.617 ; gain = 1026.051
-Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1787.453 ; gain = 1054.797
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1787.453 ; gain = 1094.906
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1793.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1796.637 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.297 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   LDC => LDCE: 5 instances
   LDP => LDPE: 2 instances
 
-Synth Design complete | Checksum: 327c647a
+Synth Design complete | Checksum: 20f0fdec
 INFO: [Common 17-83] Releasing license: Synthesis
 37 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1793.617 ; gain = 1290.469
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1793.617 ; gain = 0.000
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1800.297 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/animations.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file animations_utilization_synth.rpt -pb animations_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 23 23:01:15 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 24 10:35:26 2025...
