@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1/animations.tcl"
+  variable script "/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1/animations.tcl"
   variable category "vivado_impl"
 }
 
@@ -104,27 +104,29 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.statsThreshold 360
+  set_param ced.repoPaths /var/home/david/vivado/ced_store/Vivado_example_project
   set_param chipscope.maxJobs 1
+  set_param tcl.statsThreshold 360
   set_param general.usePosixSpawnForFork 1
-  set_param runs.launchOptions { -jobs 4  }
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {/home/david/vivado/ece_351_final/ECE351 Final Proj.cache/wt} [current_project]
+  set_property parent.project_path {/home/david/vivado/ece_351_final/ECE351 Final Proj.xpr} [current_project]
+  set_property ip_output_repo {{/home/david/vivado/ece_351_final/ECE351 Final Proj.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/animations.dcp}}
-  read_ip -quiet {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+  add_files -quiet {{/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/synth_1/animations.dcp}}
+  read_ip -quiet {{/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}
+  read_xdc {{/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
@@ -282,4 +284,35 @@ OPTRACE "route_design write_checkpoint" END { }
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  catch { write_mem_info -force -no_partial_mmi animations.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force animations.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force animations}
+  catch {file copy -force animations.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

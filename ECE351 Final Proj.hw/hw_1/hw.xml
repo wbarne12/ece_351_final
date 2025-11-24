@@ -10,7 +10,7 @@
     <Object name="xc7a35t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="/var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1/step1.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="/var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1/animations.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>

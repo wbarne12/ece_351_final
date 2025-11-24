@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Mon Nov 24 10:38:03 2025
-| Host             : DESKTOP-7D2UER5 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date             : Mon Nov 24 11:51:16 2025
+| Host             : poppy-36gm0.device.utk.edu running 64-bit Bazzite
 | Command          : report_power -file animations_power_routed.rpt -pb animations_power_summary_routed.pb -rpx animations_power_routed.rpx
 | Design           : animations
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.080        |
+| Total On-Chip Power (W)  | 0.081        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.008        |
+| Dynamic (W)              | 0.009        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      252 |       --- |             --- |
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      253 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       73 |     20800 |            0.35 |
 |   CARRY4       |    <0.001 |       28 |      8150 |            0.34 |
-|   Register     |    <0.001 |       67 |     41600 |            0.16 |
+|   Register     |    <0.001 |       68 |     41600 |            0.16 |
 |   Others       |     0.000 |       31 |       --- |             --- |
-| Signals        |    <0.001 |      215 |       --- |             --- |
+| Signals        |    <0.001 |      216 |       --- |             --- |
 | Block RAM      |     0.002 |      0.5 |        50 |            1.00 |
-| DSPs           |     0.001 |        5 |        90 |            5.56 |
+| DSPs           |     0.002 |        5 |        90 |            5.56 |
 | I/O            |     0.003 |       10 |       106 |            9.43 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.080 |          |           |                 |
+| Total          |     0.081 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -142,7 +142,7 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| animations             |     0.008 |
+| animations             |     0.009 |
 |   animation_memory     |     0.002 |
 |     U0                 |     0.002 |
 |       inst_blk_mem_gen |     0.002 |

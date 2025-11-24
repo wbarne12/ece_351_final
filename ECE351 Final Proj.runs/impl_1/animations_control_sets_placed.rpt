@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Nov 24 10:36:57 2025
-| Host         : DESKTOP-7D2UER5 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Mon Nov 24 11:50:59 2025
+| Host         : poppy-36gm0.device.utk.edu running 64-bit Bazzite
 | Command      : report_control_sets -verbose -file animations_control_sets_placed.rpt
 | Design       : animations
 | Device       : xc7a35t
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     9 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    45 |
+| Unused register locations in slices containing registers |    44 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -60,7 +60,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               3 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              33 |           12 |
+| No           | Yes                   | No                     |              34 |           12 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              31 |            8 |
@@ -73,10 +73,10 @@ Table of Contents
 +--------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 |       Clock Signal       |   Enable Signal  |                                                       Set/Reset Signal                                                       | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[0] |                1 |              1 |         1.00 |
+|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[2] |                1 |              1 |         1.00 |
 |                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[3] |                1 |              1 |         1.00 |
-|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[4] |                1 |              1 |         1.00 |
-|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[2] |                1 |              2 |         2.00 |
+|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[0] |                1 |              2 |         2.00 |
+|                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[4] |                1 |              2 |         2.00 |
 |                          |                  | animation_memory/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[1] |                1 |              2 |         2.00 |
 |  clk_IBUF_BUFG           |                  |                                                                                                                              |                2 |              3 |         1.50 |
 |  sec_clk_0/sec_clk_reg_0 |                  | reset                                                                                                                        |                2 |              6 |         3.00 |

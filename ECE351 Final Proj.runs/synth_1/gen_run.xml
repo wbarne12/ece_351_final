@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763998416" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
-  <File Type="PA-TCL" Name="animations.tcl"/>
-  <File Type="REPORTS-TCL" Name="animations_reports.tcl"/>
-  <File Type="RDS-RDS" Name="animations.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="animations_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="animations_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="animations_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="animations.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1764002981" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="animations_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="animations.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="animations_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="animations_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="animations_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="animations.vds"/>
+  <File Type="REPORTS-TCL" Name="animations_reports.tcl"/>
   <File Type="VDS-TIMING-PB" Name="animations_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="animations.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/dependencies.v">

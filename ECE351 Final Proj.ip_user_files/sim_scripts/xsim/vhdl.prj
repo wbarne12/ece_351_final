@@ -1,5 +1,5 @@
 vhdl xpm  \
-"C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_VCOMP.vhd" \
+"/var/home/david/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 # Do not sort compile order
 nosort

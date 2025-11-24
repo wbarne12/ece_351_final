@@ -14,7 +14,7 @@
  */
 module animations(
     input clk,
-    input sw, 
+    input [15:0]sw, 
     output [3:0] JB,
     output [3:0] JC
 );
@@ -24,14 +24,14 @@ module animations(
     wire [19:0] count_net;
     wire sec_clk;
     wire [7:0] count;
-    wire [7:0] mem_animation;
+    wire [4:0] mem_animation;
     reg reset;
     
     
     always @ (posedge clk) begin
-        if (!sw) begin
+        if (!sw[15]) begin
             reset = 1'b1;
-        end else if (sw) begin
+        end else if (sw[15]) begin
             reset = 1'b0;
         end
     end
@@ -58,7 +58,6 @@ module animations(
         .douta(mem_animation)
     );
     
-    
     bin_converter convert(
         .switch(mem_animation[4:0]), 
         .angle0(deg0), 
@@ -68,11 +67,11 @@ module animations(
         .angle4(deg4)
     );
     
-    angle_decoder dc0(.angle(deg0), .value(val0));
-    angle_decoder dc1(.angle(deg1), .value(val1));
+    angle_decoder dc0(.angle(deg4), .value(val0));
+    angle_decoder dc1(.angle(deg3), .value(val1));
     angle_decoder dc2(.angle(deg2), .value(val2));
-    angle_decoder dc3(.angle(deg3), .value(val3));
-    angle_decoder dc4(.angle(deg4), .value(val4));
+    angle_decoder dc3(.angle(deg1), .value(val3));
+    angle_decoder dc4(.angle(deg0), .value(val4));
     
     comparator comp1(.A(count_net), .B(val0), .PWM(JB[0]));
     comparator comp2(.A(count_net), .B(val1), .PWM(JB[1]));
@@ -91,10 +90,10 @@ module bin_converter(
 
     always @ (*) begin
         // Covering all cases so no inferred latch
-        if (switch[4]) //needs to be flipped
-            angle4 = 9'd0;
-        else if (!switch[4])
+        if (switch[4]) //this is the thumb //needs to be flipped
             angle4 = 9'd180;
+        else if (!switch[4])
+            angle4 = 9'd0;
             
         if (switch[3]) //needs to be flipped
             angle3 = 9'd0;
@@ -102,9 +101,9 @@ module bin_converter(
             angle3 = 9'd180;
         
         if (switch[2])
-            angle2 = 9'd180;
-        else if (!switch[2])
             angle2 = 9'd0;
+        else if (!switch[2])
+            angle2 = 9'd180;
         
         if (switch[1])
             angle1 = 9'd180;
@@ -112,9 +111,9 @@ module bin_converter(
             angle1 = 9'd0;
             
         if (switch[0]) //needs to be flipped
-            angle0 = 9'd0;
-        else if (!switch[0])
             angle0 = 9'd180;
+        else if (!switch[0])
+            angle0 = 9'd0;
     end
 endmodule
 

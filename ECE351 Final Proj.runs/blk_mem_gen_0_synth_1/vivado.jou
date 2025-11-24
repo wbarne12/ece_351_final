@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
 # Vivado v2025.1 (64-bit)
-# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Nov 24 10:24:50 2025
-# Process ID         : 7016
-# Current directory  : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1
-# Command line       : vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
-# Log file           : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
-# Journal file       : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1\vivado.jou
-# Running On         : DESKTOP-7D2UER5
-# Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 19045
-# Processor Detail   : Intel(R) Core(TM) i3-3120M CPU @ 2.50GHz
-# CPU Frequency      : 2494 MHz
-# CPU Physical cores : 2
-# CPU Logical cores  : 4
-# Host memory        : 8164 MB
-# Swap memory        : 5179 MB
-# Total Virtual      : 13344 MB
-# Available Virtual  : 6901 MB
+# Start of session at: Mon Nov 24 11:37:23 2025
+# Process ID         : 40086
+# Current directory  : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1
+# Command line       : vivado -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file           : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file       : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/blk_mem_gen_0_synth_1/vivado.jou
+# Running On         : poppy-36gm0.device.utk.edu
+# Platform           : Bazzite
+# Operating System   : Bazzite
+# Processor Detail   : AMD Ryzen 5 4500U with Radeon Graphics
+# CPU Frequency      : 3992.266 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 16088 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20383 MB
+# Available Virtual  : 12844 MB
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl -notrace
