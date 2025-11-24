@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
 # Vivado v2025.1 (64-bit)
-# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Nov 22 17:40:32 2025
-# Process ID         : 100696
-# Current directory  : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1
-# Command line       : vivado -log step1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source step1.tcl -notrace
-# Log file           : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1/step1.vdi
-# Journal file       : /var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/impl_1/vivado.jou
-# Running On         : bazzite
-# Platform           : Bazzite
-# Operating System   : Bazzite
-# Processor Detail   : AMD Ryzen 5 4500U with Radeon Graphics
-# CPU Frequency      : 3992.585 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 6
-# Host memory        : 16088 MB
-# Swap memory        : 4294 MB
-# Total Virtual      : 20383 MB
-# Available Virtual  : 7340 MB
+# Start of session at: Sun Nov 23 23:01:23 2025
+# Process ID         : 11172
+# Current directory  : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1
+# Command line       : vivado.exe -log animations.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source animations.tcl -notrace
+# Log file           : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1/animations.vdi
+# Journal file       : C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-7D2UER5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i3-3120M CPU @ 2.50GHz
+# CPU Frequency      : 2494 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 8164 MB
+# Swap memory        : 5179 MB
+# Total Virtual      : 13344 MB
+# Available Virtual  : 6675 MB
 #-----------------------------------------------------------
-source step1.tcl -notrace
+source animations.tcl -notrace

@@ -1,165 +1,158 @@
 
 *** Running vivado
-    with args -log step1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source step1.tcl
+    with args -log animations.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source animations.tcl
+
 
 
 ****** Vivado v2025.1 (64-bit)
-  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Sat Nov 22 17:39:38 2025
+  **** Start of session at: Sun Nov 23 22:59:30 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source step1.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+source animations.tcl -notrace
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 492.641 ; gain = 212.234
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top step1 -part xc7a35tcpg236-1
+Command: synth_design -top animations -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 100440
+INFO: [Synth 8-7075] Helper process launched with PID 7936
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2308.434 ; gain = 441.797 ; free physical = 1239 ; free virtual = 5844
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1183.840 ; gain = 494.402
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'step1' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:10]
-INFO: [Synth 8-6157] synthesizing module 'bin_converter' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'bin_converter' (0#1) [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:54]
-INFO: [Synth 8-6157] synthesizing module 'angle_decoder' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'angle_decoder' (0#1) [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
-INFO: [Synth 8-6157] synthesizing module 'comparator' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:44]
-INFO: [Synth 8-6155] done synthesizing module 'comparator' (0#1) [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:44]
-INFO: [Synth 8-6157] synthesizing module 'counter' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'step1' (0#1) [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:10]
-WARNING: [Synth 8-7129] Port JC[3] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port JC[2] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port JC[1] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[15] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[14] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[13] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[12] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[11] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[10] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[9] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[8] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[7] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[6] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[5] in module step1 is either unconnected or has no load
+INFO: [Synth 8-6157] synthesizing module 'animations' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:15]
+INFO: [Synth 8-6157] synthesizing module 'second_clk' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'second_clk' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:115]
+INFO: [Synth 8-6157] synthesizing module 'eight_bit_counter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'eight_bit_counter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:144]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-13588-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/.Xil/Vivado-13588-DESKTOP-7D2UER5/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (6) of module 'blk_mem_gen_0' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:48]
+INFO: [Synth 8-6157] synthesizing module 'bin_converter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'bin_converter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:78]
+INFO: [Synth 8-6157] synthesizing module 'angle_decoder' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'angle_decoder' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:73]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:44]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/dependencies.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'animations' (0#1) [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:15]
+WARNING: [Synth 8-7129] Port JC[3] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JC[2] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JC[1] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw in module animations is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.371 ; gain = 514.734 ; free physical = 1156 ; free virtual = 5762
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.215 ; gain = 529.578 ; free physical = 1156 ; free virtual = 5762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.215 ; gain = 529.578 ; free physical = 1156 ; free virtual = 5762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.719 ; gain = 605.281
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2396.215 ; gain = 0.000 ; free physical = 1156 ; free virtual = 5762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1294.719 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]
-WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:116]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:117]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:118]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:119]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:119]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:120]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:121]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:122]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:122]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:123]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:123]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:124]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:124]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:125]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:125]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:126]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:127]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Hsync'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:128]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:128]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Vsync'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:129]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:129]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rx'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:133]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:133]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'tx'. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:134]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:134]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/step1_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/step1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'animation_memory'
+Finished Parsing XDC File [c:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'animation_memory'
+Parsing XDC File [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'rx'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc:134]
+Finished Parsing XDC File [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/animations_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/animations_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/animations_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2508.953 ; gain = 0.000 ; free physical = 1144 ; free virtual = 5775
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-lscpu: bad usage
-Try 'lscpu --help' for more information.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2508.988 ; gain = 0.000 ; free physical = 1113 ; free virtual = 5744
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1372.344 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'animation_memory' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2508.988 ; gain = 642.352 ; free physical = 1138 ; free virtual = 5758
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2516.957 ; gain = 650.320 ; free physical = 1138 ; free virtual = 5758
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2516.957 ; gain = 650.320 ; free physical = 1138 ; free virtual = 5758
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1372.848 ; gain = 683.410
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'angle0_reg' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:82]
-WARNING: [Synth 8-327] inferring latch for variable 'angle1_reg' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:77]
-WARNING: [Synth 8-327] inferring latch for variable 'angle2_reg' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:72]
-WARNING: [Synth 8-327] inferring latch for variable 'angle3_reg' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'angle4_reg' [/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/step1.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'angle0_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'angle1_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'angle2_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'angle3_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'angle4_reg' [C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.srcs/sources_1/new/animations.v:86]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2516.957 ; gain = 650.320 ; free physical = 1137 ; free virtual = 5758
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1372.848 ; gain = 683.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -191,25 +184,15 @@ DSP Report: operator dc3/value1 is absorbed into DSP dc3/value0.
 DSP Report: Generating DSP dc4/value0, operation Mode is: (C:0xea60)+(A:0x3b0)*B.
 DSP Report: operator dc4/value0 is absorbed into DSP dc4/value0.
 DSP Report: operator dc4/value1 is absorbed into DSP dc4/value0.
-WARNING: [Synth 8-7129] Port JC[3] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port JC[2] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port JC[1] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[15] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[14] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[13] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[12] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[11] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[10] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[9] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[8] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[7] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[6] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[5] in module step1 is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (convert/angle0_reg[8]) is unused and will be removed from module step1.
-WARNING: [Synth 8-3332] Sequential element (convert/angle3_reg[8]) is unused and will be removed from module step1.
-WARNING: [Synth 8-3332] Sequential element (convert/angle4_reg[8]) is unused and will be removed from module step1.
+WARNING: [Synth 8-7129] Port JC[3] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JC[2] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JC[1] in module animations is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw in module animations is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (convert/angle0_reg[8]) is unused and will be removed from module animations.
+WARNING: [Synth 8-3332] Sequential element (convert/angle3_reg[8]) is unused and will be removed from module animations.
+WARNING: [Synth 8-3332] Sequential element (convert/angle4_reg[8]) is unused and will be removed from module animations.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2516.957 ; gain = 650.320 ; free physical = 1129 ; free virtual = 5754
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1372.848 ; gain = 683.410
 ---------------------------------------------------------------------------------
  Sort Area is  dc0/value0_0 : 0 0 : 279 279 : Used 1 time 0
  Sort Area is  dc1/value0_2 : 0 0 : 279 279 : Used 1 time 0
@@ -239,19 +222,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2606.957 ; gain = 740.320 ; free physical = 1024 ; free virtual = 5649
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1548.566 ; gain = 859.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2631.988 ; gain = 765.352 ; free physical = 1000 ; free virtual = 5625
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1570.809 ; gain = 881.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2631.988 ; gain = 765.352 ; free physical = 1000 ; free virtual = 5625
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1571.352 ; gain = 881.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -269,37 +252,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -318,57 +301,57 @@ DSP Final Report (the ' indicates corresponding REG is set)
 
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |BUFG    |     1|
-|2     |CARRY4  |    20|
-|3     |DSP48E1 |     5|
-|4     |LUT1    |     1|
-|5     |LUT4    |   105|
-|6     |LUT6    |     1|
-|7     |FDRE    |    20|
-|8     |LDC     |     5|
-|9     |LDP     |     2|
-|10    |IBUF    |     7|
-|11    |OBUF    |     5|
-|12    |OBUFT   |     3|
-+------+--------+------+
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |    28|
+|4     |DSP48E1     |     5|
+|5     |LUT1        |     3|
+|6     |LUT2        |     1|
+|7     |LUT3        |     1|
+|8     |LUT4        |   111|
+|9     |LUT5        |     5|
+|10    |LUT6        |     4|
+|11    |FDRE        |    59|
+|12    |LDC         |     5|
+|13    |LDP         |     2|
+|14    |IBUF        |     2|
+|15    |OBUF        |     5|
+|16    |OBUFT       |     3|
++------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.801 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2795.801 ; gain = 816.391 ; free physical = 859 ; free virtual = 5483
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2795.809 ; gain = 929.164 ; free physical = 859 ; free virtual = 5483
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 1793.617 ; gain = 1026.051
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1793.617 ; gain = 1104.180
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2795.809 ; gain = 0.000 ; free physical = 859 ; free virtual = 5483
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1793.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2795.809 ; gain = 0.000 ; free physical = 873 ; free virtual = 5498
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   LDC => LDCE: 5 instances
   LDP => LDPE: 2 instances
 
-lscpu: bad usage
-Try 'lscpu --help' for more information.
-Synth Design complete | Checksum: 392a8a76
+Synth Design complete | Checksum: 327c647a
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 53 Warnings, 16 Critical Warnings and 0 Errors encountered.
+37 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2795.836 ; gain = 1073.348 ; free physical = 873 ; free virtual = 5498
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1852.371; main = 1779.475; forked = 278.467
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4246.523; main = 2795.805; forked = 1614.531
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2819.812 ; gain = 0.000 ; free physical = 873 ; free virtual = 5498
-INFO: [Common 17-1381] The checkpoint '/var/home/david/vivado/ece_351_final/ECE351 Final Proj.runs/synth_1/step1.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file step1_utilization_synth.rpt -pb step1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 22 17:40:11 2025...
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1793.617 ; gain = 1290.469
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1793.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stan/Desktop/Labs/ECE351/ece_351_final/ECE351 Final Proj.runs/synth_1/animations.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file animations_utilization_synth.rpt -pb animations_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 23 23:01:15 2025...

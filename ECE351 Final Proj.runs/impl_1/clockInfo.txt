@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1
-| Date         : Sat Nov 22 17:40:50 2025
-| Host         : bazzite
+| Date         : Sun Nov 23 23:02:34 2025
+| Host         : DESKTOP-7D2UER5
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------

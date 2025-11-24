@@ -1,30 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="87389" HostCore="6" HostMemory="15711684">
+    <Process Command="vivado.bat" Owner="Stan" Host="DESKTOP-7D2UER5" Pid="13436" HostCore="4" HostMemory="08164167680">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="90163" HostCore="6" HostMemory="15711684">
+    <Process Command="vivado.bat" Owner="Stan" Host="DESKTOP-7D2UER5" Pid="5712" HostCore="4" HostMemory="08164167680">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="93038" HostCore="6" HostMemory="15711684">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="96526" HostCore="6" HostMemory="15711684">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="99897" HostCore="6" HostMemory="15711684">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="david" Host="bazzite" Pid="100629" HostCore="6" HostMemory="15711684">
+    <Process Command="vivado.bat" Owner="Stan" Host="DESKTOP-7D2UER5" Pid="9556" HostCore="4" HostMemory="08164167680">
     </Process>
 </ProcessHandle>

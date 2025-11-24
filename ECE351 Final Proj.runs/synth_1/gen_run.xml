@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763851175" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="step1_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="step1.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="step1_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="step1_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="step1_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="step1.vds"/>
-  <File Type="REPORTS-TCL" Name="step1_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="step1_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="step1.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763956766" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="REPORTS-TCL" Name="animations_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="animations_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="animations_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="animations.tcl"/>
+  <File Type="RDS-RDS" Name="animations.vds"/>
+  <File Type="RDS-DCP" Name="animations.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/dependencies.v">
@@ -18,8 +15,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/animations.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/step1.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -33,17 +38,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/mem_file/animations.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="step1"/>
+      <Option Name="TopModule" Val="animations"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Vivado work/Basys-3-Mastercopy.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../var/home/david/Documents/Vivado work/Basys-3-Mastercopy.xdc"/>
-        <Attr Name="ImportTime" Val="1763479856"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -70,4 +79,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>
