@@ -37,12 +37,11 @@
 module testbench;
 
     reg clk = 0;
-    reg clr;
+    reg [15:0] sw;
     reg sw;
     wire [3:0] JB, JC;
 
     animations animate(
-        .clr(clr),
         .clk(clk),
         .sw(sw), 
         .JB(JB),
@@ -55,7 +54,7 @@ module testbench;
         clr = 1;
         #20
         clr = 0;
-        sw = 1; 
+        sw[15] = 1; 
     end
 
 endmodule
