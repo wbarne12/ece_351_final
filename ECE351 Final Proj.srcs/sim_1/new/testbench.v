@@ -1,4 +1,4 @@
-`timescale 1ns / 1ns
+//`timescale 1ns / 1ns
 
 //module testbench_step1;
 //    reg [15:0] sw;
@@ -33,28 +33,40 @@
 
 //endmodule
 
+`timescale 1ns/1ps
 
-module testbench;
+module animations_tb;
 
-    reg clk = 0;
-    reg [15:0] sw;
-    reg sw;
-    wire [3:0] JB, JC;
+    reg clk;                 // simulated clock
+    reg [15:0] sw;           // switch inputs
+    wire [3:0] JB;           // PWM outputs
+    wire [3:0] JC;           // PWM outputs
 
-    animations animate(
+    animations uut (
         .clk(clk),
-        .sw(sw), 
+        .sw(sw),
         .JB(JB),
         .JC(JC)
     );
-    
-    always #5 clk = ~clk;
-    
     initial begin
-        clr = 1;
-        #20
-        clr = 0;
-        sw[15] = 1; 
+        clk = 0;
+        forever #5 clk = ~clk;   // 10 ns period -> 100 MHz
     end
+    initial begin
+        sw = 16'b0;
+        #100;
+        sw[15] = 1;
+        #500000;
+        sw[15] = 0;
+        sw[4:0] = 5'b10000;   // simple manual test value
+        #200000;
+        sw[4:0] = 5'b01000;
+        #200000;
+        $stop;
+    end
+
+//    always @(posedge clk) begin
+//        $display("Time=%0t | JB=%b | JC=%b", $time, JB, JC);
+//    end
 
 endmodule

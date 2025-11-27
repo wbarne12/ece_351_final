@@ -24,6 +24,7 @@ vlog -work blk_mem_gen_v8_4_11  -incr -v2k5 "+incdir+../../../../../.var/app/com
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../../.var/app/com.github.corna.Vivado/data/xilinx-install/2025.1/data/rsb/busdef" -l xpm -l blk_mem_gen_v8_4_11 -l xil_defaultlib \
 "../../../ECE351 Final Proj.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 "../../../ECE351 Final Proj.srcs/sources_1/new/animations.v" \
+"../../../ECE351 Final Proj.srcs/sim_1/imports/sim/blk_mem_gen_0.v" \
 "../../../ECE351 Final Proj.srcs/sources_1/new/dependencies.v" \
 "../../../ECE351 Final Proj.srcs/sim_1/new/testbench.v" \
 

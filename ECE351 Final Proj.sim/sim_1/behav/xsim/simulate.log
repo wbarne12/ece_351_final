@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module animations_tb.uut.animation_memory.inst.native_mem_module.blk_mem_gen_v8_4_11_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 900100 ns : File "/var/home/david/vivado/ece_351_final/ECE351 Final Proj.srcs/sim_1/new/testbench.v" Line 65
+INFO: xsimkernel Simulation Memory Usage: 496240 KB (Peak: 540700 KB), Simulation CPU Usage: 2330 ms
