@@ -5,7 +5,7 @@ Final project for ECE 351 at the University of Tennessee Knoxville. In this proj
 | Name           | Email                 |
 |----------------|-----------------------|
 | Barnes, Stanley| wbarne12@vols.utk.edu |
-| Demarco, Davin | ddemarco@vols.utk.edu |
+| Demarco, Devin | ddemarco@vols.utk.edu |
 | Floyd, David   | sfloyd10@vols.utk.edu |
 
 ## How to use
